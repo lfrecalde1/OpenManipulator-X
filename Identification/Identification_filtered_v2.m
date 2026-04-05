@@ -135,7 +135,7 @@ id_opts.max_iter = 1000;
 id_opts.print_level = 5;
 id_opts.g = g;
 
-[x_opt_vec, id_info] = estimate_system_parameters_casadi_robust_new(q_id, qd_id, qdd_id, tau_id, x0, id_opts);
+[x_opt_vec, id_info] = estimate_system_parameters_casadi(q_id, qd_id, qdd_id, tau_id, x0, id_opts);
 
 disp('Estimated parameters x_opt_vec =')
 disp(x_opt_vec)

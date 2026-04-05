@@ -1,4 +1,4 @@
-function [x_opt_vec, info] = estimate_system_parameters_casadi_robust_new(q, q_dot, q_ddot, tau, x0,  opts)
+function [x_opt_vec, info] = estimate_system_parameters_casadi(q, q_dot, q_ddot, tau, x0,  opts)
 % Robust CasADi-based parameter estimation for manipulator dynamics.
 % Decision vars:
 % x = [m1 m2 m3 m4 ...
