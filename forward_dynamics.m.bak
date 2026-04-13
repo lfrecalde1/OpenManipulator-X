@@ -1,0 +1,62 @@
+%% Setup robot
+clc, clear all, close all;
+
+%% Add Subfolder
+addpath("Communication_Code");
+addpath("generated_dynamics")
+
+%% Define sample time
+t_sample = 0.01;
+tfin = 10;
+t = 0:t_sample:tfin;
+
+
+%% Joint Positions
+q = zeros(4, length(t)+1);
+q_dot = zeros(4, length(t)+1);
+
+%% Constants
+q1_desired = 0.0*ones(1, length(t));
+q2_desired = -0.0*ones(1, length(t));
+q3_desired =  -0.0*ones(1, length(t));
+q4_desired =  -0.0*ones(1, length(t));
+
+q_desired = [q1_desired; q2_desired; q3_desired; q4_desired];
+
+%% If you implement a full inverse dynamics controller you can define a desired velocity for each joint
+q_desired_dot = [0*q1_desired; 0*q2_desired; 0*q3_desired; 0*q4_desired];
+
+%% System parameters
+R =load('Identification/identification_result.mat');
+p = [R.p(1:6); ...
+     R.x_opt_vec(1); R.x_opt_vec(2); R.x_opt_vec(3); R.x_opt_vec(4); ...
+     R.x_opt_vec(5); R.x_opt_vec(6); R.x_opt_vec(7); ...
+     R.x_opt_vec(8); R.x_opt_vec(9); R.x_opt_vec(10); ...
+     R.x_opt_vec(11); R.x_opt_vec(12); R.x_opt_vec(13); ...
+     R.x_opt_vec(14); R.x_opt_vec(15); R.x_opt_vec(16); ...
+     R.id_info.g];
+pf = [R.x_opt_vec(17); R.x_opt_vec(18); R.x_opt_vec(19); R.x_opt_vec(20)];
+
+
+%% Control Loop
+for k = 1:length(t) 
+    tic
+    %% Create Control Law Your Controller goes Here
+    tau_k(:, k) = [0;0;0;0];
+
+    torques = [0.0, tau_k(2, k), tau_k(3, k), tau_k(4, k)];
+    %% This is the mapping to Amperes
+
+    while toc < t_sample
+    end
+    %% Sample time
+    dt(k) = toc;
+
+    %% Integrate dynamics
+    M = M_fun(q(:,k), p);
+    C = C_fun(q(:,k), q_dot(:,k), p);
+    G = G_fun(q(:,k), p);
+    tau_visc = ViscousFriction_fun(q_dot(:,k), pf);
+    %% Runge kutta integrator
+    
+end
