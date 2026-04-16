@@ -16,16 +16,16 @@ This repository includes:
 1. Install MATLAB on Linux.
 2. Download the Dynamixel SDK for MATLAB/Linux:
    - https://emanual.robotis.com/docs/en/software/dynamixel/dynamixel_sdk/download/#repository
-3. Configure SDK paths:
-   - Preferred: edit and run [init_libraries.m](init_libraries.m)
-   - Or follow: https://emanual.robotis.com/docs/en/software/dynamixel/dynamixel_sdk/library_setup/matlab_linux/#matlab-linux
-4. Build the native SDK library:
+   - Build the native SDK library:
 ```bash
 cd <your_dynamixel_sdk>/c/build/linux64
 make clean
 make
 ```
-5. Set Linux serial permissions if needed:
+3. Configure SDK paths:
+   - Preferred: edit and run [init_libraries.m](init_libraries.m)
+   - Or follow: https://emanual.robotis.com/docs/en/software/dynamixel/dynamixel_sdk/library_setup/matlab_linux/#matlab-linux
+4. Set Linux serial permissions if needed:
 ```bash
 sudo chmod a+rw /dev/ttyUSB0
 ```
