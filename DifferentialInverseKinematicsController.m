@@ -15,7 +15,7 @@ t = 0:dt:Tfinal;
 
 %% The URDF has 6 movable joints: 4 arm joints + 2 gripper joints.
 q = [0; 0; 0; 0];
-qFull = homeConfiguration(robot);
+qFull = homeConfiguration(robot)
 qFull(:) = 0;
 
 %% The Joints we can control for position control
