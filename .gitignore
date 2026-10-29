@@ -1,0 +1,4 @@
+init_libraries.m
+DynamixelSDK/*
+*.asv
+*.bak

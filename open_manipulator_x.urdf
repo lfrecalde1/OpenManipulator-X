@@ -14,7 +14,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://open_manipulator_description/meshes/open_manipulator_x/link1.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="meshes/open_manipulator_x/link1.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="grey">
         <color rgba="0.2 0.2 0.2 1"/>
@@ -23,7 +23,7 @@
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://open_manipulator_description/meshes/open_manipulator_x/link1.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="meshes/open_manipulator_x/link1.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
     <inertial>
@@ -44,7 +44,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0.019"/>
       <geometry>
-        <mesh filename="package://open_manipulator_description/meshes/open_manipulator_x/link2.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="meshes/open_manipulator_x/link2.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="grey">
         <color rgba="0.2 0.2 0.2 1"/>
@@ -53,7 +53,7 @@
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0.019"/>
       <geometry>
-        <mesh filename="package://open_manipulator_description/meshes/open_manipulator_x/link2.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="meshes/open_manipulator_x/link2.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
     <inertial>
@@ -74,7 +74,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://open_manipulator_description/meshes/open_manipulator_x/link3.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="meshes/open_manipulator_x/link3.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="grey">
         <color rgba="0.2 0.2 0.2 1"/>
@@ -83,7 +83,7 @@
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://open_manipulator_description/meshes/open_manipulator_x/link3.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="meshes/open_manipulator_x/link3.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
     <inertial>
@@ -104,7 +104,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://open_manipulator_description/meshes/open_manipulator_x/link4.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="meshes/open_manipulator_x/link4.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="grey">
         <color rgba="0.2 0.2 0.2 1"/>
@@ -113,7 +113,7 @@
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://open_manipulator_description/meshes/open_manipulator_x/link4.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="meshes/open_manipulator_x/link4.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
     <inertial>
@@ -134,7 +134,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://open_manipulator_description/meshes/open_manipulator_x/link5.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="meshes/open_manipulator_x/link5.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="grey">
         <color rgba="0.2 0.2 0.2 1"/>
@@ -143,7 +143,7 @@
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://open_manipulator_description/meshes/open_manipulator_x/link5.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="meshes/open_manipulator_x/link5.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
     <inertial>
@@ -164,7 +164,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://open_manipulator_description/meshes/open_manipulator_x/gripper_left_palm.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="meshes/open_manipulator_x/gripper_left_palm.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="grey">
         <color rgba="0.2 0.2 0.2 1"/>
@@ -173,7 +173,7 @@
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://open_manipulator_description/meshes/open_manipulator_x/gripper_left_palm.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="meshes/open_manipulator_x/gripper_left_palm.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
     <inertial>
@@ -195,7 +195,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://open_manipulator_description/meshes/open_manipulator_x/gripper_right_palm.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="meshes/open_manipulator_x/gripper_right_palm.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="grey">
         <color rgba="0.2 0.2 0.2 1"/>
@@ -204,7 +204,7 @@
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://open_manipulator_description/meshes/open_manipulator_x/gripper_right_palm.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="meshes/open_manipulator_x/gripper_right_palm.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
     <inertial>

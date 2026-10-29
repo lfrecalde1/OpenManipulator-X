@@ -6,7 +6,7 @@ function [x_opt_vec, info] = estimate_system_parameters_casadi(q, q_dot, q_ddot,
 %      fv1 fv2 fv3 fv4]'
 
 %% You will need to modity this path in case you want to identify the system dynamics again
-addpath('/home/fer/casadi-3.6.7-linux64-matlab2018b');
+addpath('/home/casadi-3.6.7-linux64-matlab2024b');
 import casadi.*;
 
 q = double(q);
